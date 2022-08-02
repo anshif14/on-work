@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body  class="work">
+    <div class="">
+    <nav>
+        <label for="logo">logo</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Works</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="container">
+        work <br>
+
+            
+
+       
+              <!-- work -->
+
+        <div class="card">
+            tribute page <br>
+            
+            <a href="#" class="boton">
+                EXPLORE  
+                </a>
+           
+        </div>
+       
+        <!-- work end -->
+       
+        
+
+
+
+    </div>
+<script>
+    $(window).ready(function(){
+    $(".boton").wrapInner('<div class=botontext></div>');
+        
+        $(".botontext").clone().appendTo( $(".boton") );
+        
+        $(".boton").append('<span class="twist"></span><span class="twist"></span><span class="twist"></span><span class="twist"></span>');
+        
+        $(".twist").css("width", "25%").css("width", "+=3px");
+    });
+</script>
+    </body>
+    </html>
